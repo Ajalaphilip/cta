@@ -8,7 +8,6 @@
 
 <meta name="description" content="AI couples therapy app for real-time relationship support. Improve communication, resolve conflicts, and strengthen your relationship with therapist-guided tools.">
 
-<!-- SEO -->
 <meta name="robots" content="index, follow">
 <meta name="author" content="Couples Therapy Assistant">
 <meta name="geo.region" content="US">
@@ -16,28 +15,64 @@
 
 <link rel="stylesheet" href="styles.css">
 
-<!-- ✅ SCHEMA MARKUP -->
+<!-- ✅ COMBINED SCHEMA -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Couples Therapy Assistant",
-  "applicationCategory": "HealthApplication",
-  "operatingSystem": "iOS, Android",
-  "description": "AI-powered couples therapy app providing real-time communication support, conflict resolution, and therapist-guided relationship tools.",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
+ "@context": "https://schema.org",
+ "@graph": [
+
+  {
+   "@type": "SoftwareApplication",
+   "name": "Couples Therapy Assistant",
+   "applicationCategory": "HealthApplication",
+   "operatingSystem": "iOS, Android",
+   "description": "AI-powered couples therapy app providing real-time communication support.",
+   "offers": {
+     "@type": "Offer",
+     "price": "0",
+     "priceCurrency": "USD"
+   }
   },
-  "creator": {
-    "@type": "Organization",
-    "name": "CTA Delivery LLC"
+
+  {
+   "@type": "Organization",
+   "name": "CTA Delivery LLC",
+   "url": "https://www.ctadeliveryllc.com"
   },
-  "areaServed": {
-    "@type": "Country",
-    "name": "United States"
+
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+     {
+       "@type": "Question",
+       "name": "What is a couples therapy app?",
+       "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "A couples therapy app helps partners improve communication and resolve conflicts."
+       }
+     },
+     {
+       "@type": "Question",
+       "name": "Can this replace therapy?",
+       "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "No. It supports therapy between sessions."
+       }
+     }
+   ]
+  },
+
+  {
+   "@type": "HowTo",
+   "name": "How Couples Therapy Assistant Works",
+   "step": [
+     {"@type": "HowToStep","name": "Get Connected"},
+     {"@type": "HowToStep","name": "Use Tools"},
+     {"@type": "HowToStep","name": "Track Progress"}
+   ]
   }
+
+ ]
 }
 </script>
 
@@ -51,9 +86,9 @@
     <h2 class="logo">CTA</h2>
     <nav>
       <a href="#features">Features</a>
-      <a href="#couples">For Couples</a>
-      <a href="#therapists">For Therapists</a>
-      <a href="#" class="btn small">Get Started</a>
+      <a href="#how">How It Works</a>
+      <a href="#about-founder">About</a>
+      <a href="#contact" class="btn small">Get Started</a>
     </nav>
   </div>
 </header>
@@ -63,12 +98,12 @@
   <div class="container">
     <h1>AI Couples Therapy App for Real-Time Relationship Support</h1>
     <p>
-      Improve communication, resolve conflict, and strengthen your relationship with therapist-guided tools available exactly when you need them.
+      Improve communication, resolve conflict, and strengthen your relationship with therapist-guided tools.
     </p>
 
     <div class="cta">
-      <a href="#therapists" class="btn primary">Start Free Trial</a>
-      <a href="#couples" class="btn secondary">Get Access</a>
+      <a href="#contact" class="btn primary">Start Free Trial</a>
+      <a href="#features" class="btn secondary">Explore Features</a>
     </div>
   </div>
 </section>
@@ -76,84 +111,131 @@
 <!-- PROBLEM -->
 <section class="section">
   <div class="container">
-    <h2>Why Most Relationships Struggle With Communication</h2>
+    <h2>Why Relationships Struggle</h2>
     <p>
-      Arguments don’t happen in therapy sessions. They happen in real life.
-      Most couples lack the tools to respond clearly in emotional moments, leading to repeated conflicts and unresolved tension.
+      Most conflicts happen in real life, not in therapy sessions. Without guidance, communication breaks down.
     </p>
   </div>
 </section>
 
-<!-- SOLUTION -->
-<section class="section light">
-  <div class="container">
-    <h2>Real-Time Couples Therapy Support</h2>
-    <ul>
-      <li>Guidance during real conversations</li>
-      <li>AI-powered conflict resolution</li>
-      <li>Emotional awareness tracking</li>
-      <li>Therapist-connected insights</li>
-    </ul>
-  </div>
-</section>
-
 <!-- FEATURES -->
-<section class="section" id="features">
+<section class="section light" id="features">
   <div class="container">
     <h2>Key Features</h2>
 
     <div class="grid">
       <div class="card">
         <h3>AI Conversation Support</h3>
-        <p>Get real-time responses to navigate difficult conversations.</p>
+        <p>Navigate difficult conversations in real time.</p>
       </div>
 
       <div class="card">
         <h3>Daily Check-Ins</h3>
-        <p>Track emotional patterns and relationship health over time.</p>
+        <p>Track emotional patterns and progress.</p>
       </div>
 
       <div class="card">
         <h3>Therapist Integration</h3>
-        <p>Stay connected with your therapist between sessions.</p>
+        <p>Stay connected between sessions.</p>
       </div>
 
       <div class="card">
         <h3>Secure & Private</h3>
-        <p>Encrypted communication and protected data.</p>
+        <p>Your data is encrypted and protected.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- COUPLES -->
-<section class="section light" id="couples">
+<!-- HOW IT WORKS -->
+<section class="section" id="how">
   <div class="container">
-    <h2>For Couples</h2>
-    <p>
-      Get support when it matters most. Improve communication, reduce conflict, and understand your partner better.
-    </p>
-    <a href="#" class="btn primary">Talk to Your Therapist</a>
+    <h2>How It Works</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>1. Get Access</h3>
+        <p>Join through your therapist.</p>
+      </div>
+
+      <div class="card">
+        <h3>2. Use AI Support</h3>
+        <p>Get real-time guidance during conversations.</p>
+      </div>
+
+      <div class="card">
+        <h3>3. Track Progress</h3>
+        <p>Monitor emotional and relationship patterns.</p>
+      </div>
+
+      <div class="card">
+        <h3>4. Improve Continuously</h3>
+        <p>Build better communication habits over time.</p>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- THERAPISTS -->
-<section class="section" id="therapists">
+<!-- FOUNDER -->
+<section class="section light" id="about-founder">
   <div class="container">
-    <h2>For Therapists</h2>
+
+    <h2>About the Founder</h2>
+
     <p>
-      Improve client outcomes with structured tools, real-time insights, and better engagement between sessions.
+      Built by a licensed mental health professional with over 10 years of experience working with couples.
     </p>
-    <a href="#" class="btn primary">Start Free Trial</a>
+
+    <ul>
+      <li>Licensed Marriage and Family Therapist (LMFT)</li>
+      <li>Specialist in relationship therapy</li>
+      <li>Extensive experience in conflict resolution</li>
+    </ul>
+
+    <h3>Our Mission</h3>
+    <p>
+      To provide real-time tools that improve communication and strengthen relationships.
+    </p>
+
+    <h3>Our Vision</h3>
+    <p>
+      To make relationship support accessible and effective in everyday life.
+    </p>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="container">
+
+    <h2>Get Started</h2>
+
+    <form action="https://formspree.io/f/yourformid" method="POST" class="form">
+
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+
+      <select name="type" required>
+        <option value="">I am a...</option>
+        <option value="couple">Couple</option>
+        <option value="therapist">Therapist</option>
+      </select>
+
+      <textarea name="message" placeholder="Message"></textarea>
+
+      <button type="submit" class="btn primary">Submit</button>
+
+    </form>
+
   </div>
 </section>
 
 <!-- CTA -->
 <section class="cta-final">
   <div class="container">
-    <h2>Start Improving Relationships Today</h2>
-    <p>Give couples the tools they need to communicate better and grow together.</p>
-    <a href="#" class="btn primary">Get Started</a>
+    <h2>Start Improving Your Relationship Today</h2>
+    <a href="#contact" class="btn primary">Get Started</a>
   </div>
 </section>
 
@@ -164,284 +246,3 @@
 
 </body>
 </html>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "CTA Delivery LLC",
-  "url": "https://www.ctadeliveryllc.com",
-  "logo": "https://www.ctadeliveryllc.com/logo.png",
-  "sameAs": []
-}
-</script>
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "FAQPage",
- "mainEntity": [
-  {
-   "@type": "Question",
-   "name": "What is a couples therapy app?",
-   "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "A couples therapy app provides tools and guidance to help partners improve communication, resolve conflict, and strengthen relationships."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Can this replace therapy?",
-   "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "No. This app supports therapy by providing guidance between sessions, not replacing licensed professionals."
-   }
-  }
- ]
-}
-</script>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>How Couples Therapy Assistant Works | AI Relationship Support</title>
-
-<meta name="description" content="Learn how the Couples Therapy Assistant works. Real-time relationship support, AI communication tools, and therapist-guided insights to improve communication and resolve conflict.">
-
-<link rel="stylesheet" href="styles.css">
-
-<!-- SEO Schema -->
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "HowTo",
- "name": "How the Couples Therapy Assistant Works",
- "step": [
-  {"@type": "HowToStep","name": "Get Connected","text": "Therapists invite couples to access the platform."},
-  {"@type": "HowToStep","name": "Start Using Tools","text": "Couples use AI tools for communication and conflict resolution."},
-  {"@type": "HowToStep","name": "Track Progress","text": "Emotional check-ins and conversations are tracked over time."}
- ]
-}
-</script>
-
-</head>
-
-<body>
-
-<header class="navbar">
-  <div class="container nav-flex">
-    <h2>CTA</h2>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="features.html">Features</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="container">
-    <h1>How the Couples Therapy Assistant Works</h1>
-    <p>
-      A structured system designed to help couples improve communication, resolve conflict, and strengthen their relationship in real time.
-    </p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <h2>Step 1: Therapist-Guided Access</h2>
-    <p>
-      The platform is designed for use through licensed therapists. Couples receive access through their therapist, ensuring structured and professional guidance.
-    </p>
-  </div>
-</section>
-
-<section class="section light">
-  <div class="container">
-    <h2>Step 2: Real-Time Communication Support</h2>
-    <p>
-      During everyday interactions, couples can use the app to get AI-guided responses that help them navigate difficult conversations, reduce conflict, and improve understanding.
-    </p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <h2>Step 3: Daily Emotional Check-Ins</h2>
-    <p>
-      Users track their emotional state and relationship health through structured check-ins. This creates awareness and helps identify patterns over time.
-    </p>
-  </div>
-</section>
-
-<section class="section light">
-  <div class="container">
-    <h2>Step 4: Therapist Integration</h2>
-    <p>
-      Therapists can monitor shared insights, assign exercises, and track progress between sessions, improving overall outcomes and engagement.
-    </p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <h2>Step 5: Continuous Improvement</h2>
-    <p>
-      By combining real-time support with therapist guidance, couples build stronger communication habits and long-term relationship stability.
-    </p>
-  </div>
-</section>
-
-<section class="cta-final">
-  <div class="container">
-    <h2>Start Improving Your Relationship Today</h2>
-    <a href="contact.html" class="btn primary">Get Started</a>
-  </div>
-</section>
-
-<footer>
-  <p>© 2026 Couples Therapy Assistant</p>
-</footer>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Contact | Couples Therapy Assistant</title>
-
-<meta name="description" content="Contact Couples Therapy Assistant. Get access to the AI-powered couples therapy app or start using it in your therapy practice.">
-
-<link rel="stylesheet" href="styles.css">
-
-<!-- Schema -->
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "ContactPage",
- "name": "Contact Couples Therapy Assistant"
-}
-</script>
-
-</head>
-
-<body>
-
-<header class="navbar">
-  <div class="container nav-flex">
-    <h2>CTA</h2>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="how-it-works.html">How It Works</a>
-    </nav>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="container">
-    <h1>Get Started with Couples Therapy Assistant</h1>
-    <p>
-      Whether you're a couple or a therapist, we’ll help you get started quickly.
-    </p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-
-    <h2>Request Access</h2>
-
-    <form action="https://formspree.io/f/yourformid" method="POST" class="form">
-
-      <label>Full Name</label>
-      <input type="text" name="name" required>
-
-      <label>Email Address</label>
-      <input type="email" name="email" required>
-
-      <label>I am a:</label>
-      <select name="user_type" required>
-        <option value="">Select</option>
-        <option value="couple">Couple / Individual</option>
-        <option value="therapist">Therapist</option>
-      </select>
-
-      <label>Message</label>
-      <textarea name="message" rows="5"></textarea>
-
-      <button type="submit" class="btn primary">Submit Request</button>
-
-    </form>
-
-  </div>
-</section>
-
-<section class="section light">
-  <div class="container">
-    <h2>What Happens Next</h2>
-    <ul>
-      <li>We review your request</li>
-      <li>Provide onboarding instructions</li>
-      <li>Help you get set up quickly</li>
-    </ul>
-  </div>
-</section>
-
-<footer>
-  <p>© 2026 Couples Therapy Assistant</p>
-</footer>
-
-</body>
-</html>
-<section class="section light" id="about-founder">
-  <div class="container">
-
-    <h2>About the Founder</h2>
-
-    <p>
-      The Couples Therapy Assistant was founded by a licensed mental health professional with extensive experience working directly with couples navigating communication challenges, emotional disconnect, and recurring conflict patterns.
-    </p>
-
-    <p>
-      Through years of clinical practice, one challenge remained consistent. Couples needed support not only during therapy sessions, but in the real-life moments where communication breaks down.
-    </p>
-
-    <p>
-      The Couples Therapy Assistant was created to bridge that gap by providing structured, real-time guidance grounded in proven therapeutic principles.
-    </p>
-
-    <h3>Professional Background & Certifications</h3>
-
-    <ul>
-      <li>Licensed Mental Health Professional</li>
-      <li>Specialized in Couples and Relationship Therapy</li>
-      <li>Experience in Conflict Resolution and Communication Strategies</li>
-      <li>Clinical Practice Working Directly with Couples</li>
-    </ul>
-
-    <h3>Our Mission</h3>
-
-    <p>
-      To provide couples with accessible, real-time tools that improve communication, reduce conflict, and strengthen relationships, while supporting therapists in delivering more effective and consistent outcomes.
-    </p>
-
-    <h3>Our Vision</h3>
-
-    <p>
-      To redefine how couples therapy is experienced by integrating technology with human insight, making relationship support more accessible, proactive, and effective in everyday life.
-    </p>
-
-  </div>
-</section>
-<div class="card">
-  <h3>Founder & Clinical Lead</h3>
-  <p>
-    A dedicated mental health professional focused on improving relationship outcomes through structured therapy and innovative digital tools.
-  </p>
-</div>
-<li>Licensed Marriage and Family Therapist (LMFT)</li>
-<li>10+ years working with couples in the United States</li>
